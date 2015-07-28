@@ -1285,6 +1285,6 @@ for (var i = 0; i < allCountries.length; i++) {
 }
 
 module.exports = {
-            allCountries: allCountries,
-            allCountryCodes: allCountryCodes
-        };
+    allCountries: allCountries,
+    allCountryCodes: allCountryCodes
+};

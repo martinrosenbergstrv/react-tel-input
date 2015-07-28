@@ -1,48 +1,4 @@
 (function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.ReactTelephoneInput = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-var css = ".react-tel-input {\n  position: relative;\n  width: 200px;\n}\n.react-tel-input .flag {\n  width: 16px;\n  height: 11px;\n  background: url(\"flags.png\");\n}\n.react-tel-input .ad {\n  background-position: -16px 0;\n}\n.react-tel-input .ae {\n  background-position: -32px 0;\n}\n.react-tel-input .af {\n  background-position: -48px 0;\n}\n.react-tel-input .ag {\n  background-position: -64px 0;\n}\n.react-tel-input .ai {\n  background-position: -80px 0;\n}\n.react-tel-input .al {\n  background-position: -96px 0;\n}\n.react-tel-input .am {\n  background-position: -112px 0;\n}\n.react-tel-input .ao {\n  background-position: -128px 0;\n}\n.react-tel-input .ar {\n  background-position: -144px 0;\n}\n.react-tel-input .as {\n  background-position: -160px 0;\n}\n.react-tel-input .at {\n  background-position: -176px 0;\n}\n.react-tel-input .au {\n  background-position: -192px 0;\n}\n.react-tel-input .aw {\n  background-position: -208px 0;\n}\n.react-tel-input .az {\n  background-position: -224px 0;\n}\n.react-tel-input .ba {\n  background-position: -240px 0;\n}\n.react-tel-input .bb {\n  background-position: 0 -11px;\n}\n.react-tel-input .bd {\n  background-position: -16px -11px;\n}\n.react-tel-input .be {\n  background-position: -32px -11px;\n}\n.react-tel-input .bf {\n  background-position: -48px -11px;\n}\n.react-tel-input .bg {\n  background-position: -64px -11px;\n}\n.react-tel-input .bh {\n  background-position: -80px -11px;\n}\n.react-tel-input .bi {\n  background-position: -96px -11px;\n}\n.react-tel-input .bj {\n  background-position: -112px -11px;\n}\n.react-tel-input .bm {\n  background-position: -128px -11px;\n}\n.react-tel-input .bn {\n  background-position: -144px -11px;\n}\n.react-tel-input .bo {\n  background-position: -160px -11px;\n}\n.react-tel-input .br {\n  background-position: -176px -11px;\n}\n.react-tel-input .bs {\n  background-position: -192px -11px;\n}\n.react-tel-input .bt {\n  background-position: -208px -11px;\n}\n.react-tel-input .bw {\n  background-position: -224px -11px;\n}\n.react-tel-input .by {\n  background-position: -240px -11px;\n}\n.react-tel-input .bz {\n  background-position: 0 -22px;\n}\n.react-tel-input .ca {\n  background-position: -16px -22px;\n}\n.react-tel-input .cd {\n  background-position: -32px -22px;\n}\n.react-tel-input .cf {\n  background-position: -48px -22px;\n}\n.react-tel-input .cg {\n  background-position: -64px -22px;\n}\n.react-tel-input .ch {\n  background-position: -80px -22px;\n}\n.react-tel-input .ci {\n  background-position: -96px -22px;\n}\n.react-tel-input .ck {\n  background-position: -112px -22px;\n}\n.react-tel-input .cl {\n  background-position: -128px -22px;\n}\n.react-tel-input .cm {\n  background-position: -144px -22px;\n}\n.react-tel-input .cn {\n  background-position: -160px -22px;\n}\n.react-tel-input .co {\n  background-position: -176px -22px;\n}\n.react-tel-input .cr {\n  background-position: -192px -22px;\n}\n.react-tel-input .cu {\n  background-position: -208px -22px;\n}\n.react-tel-input .cv {\n  background-position: -224px -22px;\n}\n.react-tel-input .cw {\n  background-position: -240px -22px;\n}\n.react-tel-input .cy {\n  background-position: 0 -33px;\n}\n.react-tel-input .cz {\n  background-position: -16px -33px;\n}\n.react-tel-input .de {\n  background-position: -32px -33px;\n}\n.react-tel-input .dj {\n  background-position: -48px -33px;\n}\n.react-tel-input .dk {\n  background-position: -64px -33px;\n}\n.react-tel-input .dm {\n  background-position: -80px -33px;\n}\n.react-tel-input .do {\n  background-position: -96px -33px;\n}\n.react-tel-input .dz {\n  background-position: -112px -33px;\n}\n.react-tel-input .ec {\n  background-position: -128px -33px;\n}\n.react-tel-input .ee {\n  background-position: -144px -33px;\n}\n.react-tel-input .eg {\n  background-position: -160px -33px;\n}\n.react-tel-input .er {\n  background-position: -176px -33px;\n}\n.react-tel-input .es {\n  background-position: -192px -33px;\n}\n.react-tel-input .et {\n  background-position: -208px -33px;\n}\n.react-tel-input .fi {\n  background-position: -224px -33px;\n}\n.react-tel-input .fj {\n  background-position: -240px -33px;\n}\n.react-tel-input .fk {\n  background-position: 0 -44px;\n}\n.react-tel-input .fm {\n  background-position: -16px -44px;\n}\n.react-tel-input .fo {\n  background-position: -32px -44px;\n}\n.react-tel-input .fr,\n.react-tel-input .bl,\n.react-tel-input .mf {\n  background-position: -48px -44px;\n}\n.react-tel-input .ga {\n  background-position: -64px -44px;\n}\n.react-tel-input .gb {\n  background-position: -80px -44px;\n}\n.react-tel-input .gd {\n  background-position: -96px -44px;\n}\n.react-tel-input .ge {\n  background-position: -112px -44px;\n}\n.react-tel-input .gf {\n  background-position: -128px -44px;\n}\n.react-tel-input .gh {\n  background-position: -144px -44px;\n}\n.react-tel-input .gi {\n  background-position: -160px -44px;\n}\n.react-tel-input .gl {\n  background-position: -176px -44px;\n}\n.react-tel-input .gm {\n  background-position: -192px -44px;\n}\n.react-tel-input .gn {\n  background-position: -208px -44px;\n}\n.react-tel-input .gp {\n  background-position: -224px -44px;\n}\n.react-tel-input .gq {\n  background-position: -240px -44px;\n}\n.react-tel-input .gr {\n  background-position: 0 -55px;\n}\n.react-tel-input .gt {\n  background-position: -16px -55px;\n}\n.react-tel-input .gu {\n  background-position: -32px -55px;\n}\n.react-tel-input .gw {\n  background-position: -48px -55px;\n}\n.react-tel-input .gy {\n  background-position: -64px -55px;\n}\n.react-tel-input .hk {\n  background-position: -80px -55px;\n}\n.react-tel-input .hn {\n  background-position: -96px -55px;\n}\n.react-tel-input .hr {\n  background-position: -112px -55px;\n}\n.react-tel-input .ht {\n  background-position: -128px -55px;\n}\n.react-tel-input .hu {\n  background-position: -144px -55px;\n}\n.react-tel-input .id {\n  background-position: -160px -55px;\n}\n.react-tel-input .ie {\n  background-position: -176px -55px;\n}\n.react-tel-input .il {\n  background-position: -192px -55px;\n}\n.react-tel-input .in {\n  background-position: -208px -55px;\n}\n.react-tel-input .io {\n  background-position: -224px -55px;\n}\n.react-tel-input .iq {\n  background-position: -240px -55px;\n}\n.react-tel-input .ir {\n  background-position: 0 -66px;\n}\n.react-tel-input .is {\n  background-position: -16px -66px;\n}\n.react-tel-input .it {\n  background-position: -32px -66px;\n}\n.react-tel-input .jm {\n  background-position: -48px -66px;\n}\n.react-tel-input .jo {\n  background-position: -64px -66px;\n}\n.react-tel-input .jp {\n  background-position: -80px -66px;\n}\n.react-tel-input .ke {\n  background-position: -96px -66px;\n}\n.react-tel-input .kg {\n  background-position: -112px -66px;\n}\n.react-tel-input .kh {\n  background-position: -128px -66px;\n}\n.react-tel-input .ki {\n  background-position: -144px -66px;\n}\n.react-tel-input .km {\n  background-position: -160px -66px;\n}\n.react-tel-input .kn {\n  background-position: -176px -66px;\n}\n.react-tel-input .kp {\n  background-position: -192px -66px;\n}\n.react-tel-input .kr {\n  background-position: -208px -66px;\n}\n.react-tel-input .kw {\n  background-position: -224px -66px;\n}\n.react-tel-input .ky {\n  background-position: -240px -66px;\n}\n.react-tel-input .kz {\n  background-position: 0 -77px;\n}\n.react-tel-input .la {\n  background-position: -16px -77px;\n}\n.react-tel-input .lb {\n  background-position: -32px -77px;\n}\n.react-tel-input .lc {\n  background-position: -48px -77px;\n}\n.react-tel-input .li {\n  background-position: -64px -77px;\n}\n.react-tel-input .lk {\n  background-position: -80px -77px;\n}\n.react-tel-input .lr {\n  background-position: -96px -77px;\n}\n.react-tel-input .ls {\n  background-position: -112px -77px;\n}\n.react-tel-input .lt {\n  background-position: -128px -77px;\n}\n.react-tel-input .lu {\n  background-position: -144px -77px;\n}\n.react-tel-input .lv {\n  background-position: -160px -77px;\n}\n.react-tel-input .ly {\n  background-position: -176px -77px;\n}\n.react-tel-input .ma {\n  background-position: -192px -77px;\n}\n.react-tel-input .mc {\n  background-position: -208px -77px;\n}\n.react-tel-input .md {\n  background-position: -224px -77px;\n}\n.react-tel-input .me {\n  background-position: -112px -154px;\n  height: 12px;\n}\n.react-tel-input .mg {\n  background-position: 0 -88px;\n}\n.react-tel-input .mh {\n  background-position: -16px -88px;\n}\n.react-tel-input .mk {\n  background-position: -32px -88px;\n}\n.react-tel-input .ml {\n  background-position: -48px -88px;\n}\n.react-tel-input .mm {\n  background-position: -64px -88px;\n}\n.react-tel-input .mn {\n  background-position: -80px -88px;\n}\n.react-tel-input .mo {\n  background-position: -96px -88px;\n}\n.react-tel-input .mp {\n  background-position: -112px -88px;\n}\n.react-tel-input .mq {\n  background-position: -128px -88px;\n}\n.react-tel-input .mr {\n  background-position: -144px -88px;\n}\n.react-tel-input .ms {\n  background-position: -160px -88px;\n}\n.react-tel-input .mt {\n  background-position: -176px -88px;\n}\n.react-tel-input .mu {\n  background-position: -192px -88px;\n}\n.react-tel-input .mv {\n  background-position: -208px -88px;\n}\n.react-tel-input .mw {\n  background-position: -224px -88px;\n}\n.react-tel-input .mx {\n  background-position: -240px -88px;\n}\n.react-tel-input .my {\n  background-position: 0 -99px;\n}\n.react-tel-input .mz {\n  background-position: -16px -99px;\n}\n.react-tel-input .na {\n  background-position: -32px -99px;\n}\n.react-tel-input .nc {\n  background-position: -48px -99px;\n}\n.react-tel-input .ne {\n  background-position: -64px -99px;\n}\n.react-tel-input .nf {\n  background-position: -80px -99px;\n}\n.react-tel-input .ng {\n  background-position: -96px -99px;\n}\n.react-tel-input .ni {\n  background-position: -112px -99px;\n}\n.react-tel-input .nl,\n.react-tel-input .bq {\n  background-position: -128px -99px;\n}\n.react-tel-input .no {\n  background-position: -144px -99px;\n}\n.react-tel-input .np {\n  background-position: -160px -99px;\n}\n.react-tel-input .nr {\n  background-position: -176px -99px;\n}\n.react-tel-input .nu {\n  background-position: -192px -99px;\n}\n.react-tel-input .nz {\n  background-position: -208px -99px;\n}\n.react-tel-input .om {\n  background-position: -224px -99px;\n}\n.react-tel-input .pa {\n  background-position: -240px -99px;\n}\n.react-tel-input .pe {\n  background-position: 0 -110px;\n}\n.react-tel-input .pf {\n  background-position: -16px -110px;\n}\n.react-tel-input .pg {\n  background-position: -32px -110px;\n}\n.react-tel-input .ph {\n  background-position: -48px -110px;\n}\n.react-tel-input .pk {\n  background-position: -64px -110px;\n}\n.react-tel-input .pl {\n  background-position: -80px -110px;\n}\n.react-tel-input .pm {\n  background-position: -96px -110px;\n}\n.react-tel-input .pr {\n  background-position: -112px -110px;\n}\n.react-tel-input .ps {\n  background-position: -128px -110px;\n}\n.react-tel-input .pt {\n  background-position: -144px -110px;\n}\n.react-tel-input .pw {\n  background-position: -160px -110px;\n}\n.react-tel-input .py {\n  background-position: -176px -110px;\n}\n.react-tel-input .qa {\n  background-position: -192px -110px;\n}\n.react-tel-input .re {\n  background-position: -208px -110px;\n}\n.react-tel-input .ro {\n  background-position: -224px -110px;\n}\n.react-tel-input .rs {\n  background-position: -240px -110px;\n}\n.react-tel-input .ru {\n  background-position: 0 -121px;\n}\n.react-tel-input .rw {\n  background-position: -16px -121px;\n}\n.react-tel-input .sa {\n  background-position: -32px -121px;\n}\n.react-tel-input .sb {\n  background-position: -48px -121px;\n}\n.react-tel-input .sc {\n  background-position: -64px -121px;\n}\n.react-tel-input .sd {\n  background-position: -80px -121px;\n}\n.react-tel-input .se {\n  background-position: -96px -121px;\n}\n.react-tel-input .sg {\n  background-position: -112px -121px;\n}\n.react-tel-input .sh {\n  background-position: -128px -121px;\n}\n.react-tel-input .si {\n  background-position: -144px -121px;\n}\n.react-tel-input .sk {\n  background-position: -160px -121px;\n}\n.react-tel-input .sl {\n  background-position: -176px -121px;\n}\n.react-tel-input .sm {\n  background-position: -192px -121px;\n}\n.react-tel-input .sn {\n  background-position: -208px -121px;\n}\n.react-tel-input .so {\n  background-position: -224px -121px;\n}\n.react-tel-input .sr {\n  background-position: -240px -121px;\n}\n.react-tel-input .ss {\n  background-position: 0 -132px;\n}\n.react-tel-input .st {\n  background-position: -16px -132px;\n}\n.react-tel-input .sv {\n  background-position: -32px -132px;\n}\n.react-tel-input .sx {\n  background-position: -48px -132px;\n}\n.react-tel-input .sy {\n  background-position: -64px -132px;\n}\n.react-tel-input .sz {\n  background-position: -80px -132px;\n}\n.react-tel-input .tc {\n  background-position: -96px -132px;\n}\n.react-tel-input .td {\n  background-position: -112px -132px;\n}\n.react-tel-input .tg {\n  background-position: -128px -132px;\n}\n.react-tel-input .th {\n  background-position: -144px -132px;\n}\n.react-tel-input .tj {\n  background-position: -160px -132px;\n}\n.react-tel-input .tk {\n  background-position: -176px -132px;\n}\n.react-tel-input .tl {\n  background-position: -192px -132px;\n}\n.react-tel-input .tm {\n  background-position: -208px -132px;\n}\n.react-tel-input .tn {\n  background-position: -224px -132px;\n}\n.react-tel-input .to {\n  background-position: -240px -132px;\n}\n.react-tel-input .tr {\n  background-position: 0 -143px;\n}\n.react-tel-input .tt {\n  background-position: -16px -143px;\n}\n.react-tel-input .tv {\n  background-position: -32px -143px;\n}\n.react-tel-input .tw {\n  background-position: -48px -143px;\n}\n.react-tel-input .tz {\n  background-position: -64px -143px;\n}\n.react-tel-input .ua {\n  background-position: -80px -143px;\n}\n.react-tel-input .ug {\n  background-position: -96px -143px;\n}\n.react-tel-input .us {\n  background-position: -112px -143px;\n}\n.react-tel-input .uy {\n  background-position: -128px -143px;\n}\n.react-tel-input .uz {\n  background-position: -144px -143px;\n}\n.react-tel-input .va {\n  background-position: -160px -143px;\n}\n.react-tel-input .vc {\n  background-position: -176px -143px;\n}\n.react-tel-input .ve {\n  background-position: -192px -143px;\n}\n.react-tel-input .vg {\n  background-position: -208px -143px;\n}\n.react-tel-input .vi {\n  background-position: -224px -143px;\n}\n.react-tel-input .vn {\n  background-position: -240px -143px;\n}\n.react-tel-input .vu {\n  background-position: 0 -154px;\n}\n.react-tel-input .wf {\n  background-position: -16px -154px;\n}\n.react-tel-input .ws {\n  background-position: -32px -154px;\n}\n.react-tel-input .ye {\n  background-position: -48px -154px;\n}\n.react-tel-input .za {\n  background-position: -64px -154px;\n}\n.react-tel-input .zm {\n  background-position: -80px -154px;\n}\n.react-tel-input .zw {\n  background-position: -96px -154px;\n}\n.react-tel-input * {\n  box-sizing: border-box;\n  -moz-box-sizing: border-box;\n}\n.react-tel-input .hide {\n  display: none;\n}\n.react-tel-input .v-hide {\n  visibility: hidden;\n}\n.react-tel-input input[type=text],\n.react-tel-input input[type=tel] {\n  position: relative;\n  z-index: 0;\n  margin-top: 0 !important;\n  margin-bottom: 0 !important;\n  padding-left: 44px;\n  margin-left: 0;\n  background: #FFFFFF;\n  border: 1px solid #CACACA;\n  border-radius: 3px;\n  box-shadow: 0 1px 2px #E3E3E3 inset;\n  line-height: 25px;\n  height: 28px;\n  width: 100%;\n}\n.react-tel-input input[type=text]:focus,\n.react-tel-input input[type=tel]:focus {\n  border-color: #42bdff;\n  border-left-color: #cacaca;\n}\n.react-tel-input input[type=text].invalid-number,\n.react-tel-input input[type=tel].invalid-number {\n  border: 1px solid #d79f9f;\n  background-color: #FAF0F0;\n  border-left-color: #cacaca;\n}\n.react-tel-input input[type=text].invalid-number:focus,\n.react-tel-input input[type=tel].invalid-number:focus {\n  border: 1px solid #d79f9f;\n  border-left-color: #cacaca;\n  background-color: #FAF0F0;\n}\n.react-tel-input .flag-dropdown {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  padding: 0;\n  background-color: #eaeaea;\n  border: 1px solid #cacaca;\n  border-radius: 3px 0 0 3px;\n}\n.react-tel-input .flag-dropdown.open-dropdown {\n  background: #fff;\n  border-bottom: 0;\n  border-radius: 3px 0 0 0;\n}\n.react-tel-input .flag-dropdown.open-dropdown .selected-flag {\n  background: #fff;\n  border-radius: 3px 0 0 0;\n}\n.react-tel-input .flag-dropdown:hover {\n  cursor: pointer;\n}\n.react-tel-input .flag-dropdown:hover .selected-flag {\n  background-color: #fff;\n}\n.react-tel-input input[disabled] + .flag-dropdown:hover {\n  cursor: default;\n}\n.react-tel-input input[disabled] + .flag-dropdown:hover .selected-flag {\n  background-color: transparent;\n}\n.react-tel-input .selected-flag {\n  z-index: 13;\n  position: relative;\n  width: 38px;\n  height: 26px;\n  padding: 0 0 0 8px;\n  border-radius: 3px 0 0 3px;\n}\n.react-tel-input .selected-flag .flag {\n  position: absolute;\n  top: 50%;\n  margin-top: -5px;\n}\n.react-tel-input .selected-flag .arrow {\n  position: relative;\n  top: 50%;\n  margin-top: -2px;\n  left: 20px;\n  width: 0;\n  height: 0;\n  border-left: 3px solid transparent;\n  border-right: 3px solid transparent;\n  border-top: 4px solid #555;\n}\n.react-tel-input .selected-flag .arrow.up {\n  border-top: none;\n  border-bottom: 4px solid #555;\n}\n.react-tel-input .country-list {\n  list-style: none;\n  position: absolute;\n  z-index: 2;\n  padding: 0;\n  margin: -1px 0 0 -1px;\n  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);\n  background-color: white;\n  border: 1px solid #ccc;\n  width: 400px;\n  max-height: 200px;\n  overflow-y: scroll;\n  border-radius: 0 0 3px 3px;\n  top: 26px;\n}\n.react-tel-input .country-list .flag {\n  display: inline-block;\n}\n.react-tel-input .country-list .divider {\n  padding-bottom: 5px;\n  margin-bottom: 5px;\n  border-bottom: 1px solid #ccc;\n}\n.react-tel-input .country-list .country {\n  padding: 5px 10px;\n}\n.react-tel-input .country-list .country .dial-code {\n  color: #999;\n}\n.react-tel-input .country-list .country:hover {\n  background-color: #e8f7fe;\n}\n.react-tel-input .country-list .country.highlight {\n  background-color: #c7e2f1;\n}\n.react-tel-input .country-list .flag {\n  margin-right: 6px;\n  margin-top: 2px;\n}\n.react-tel-input .country-list .country-name {\n  margin-right: 6px;\n}\n";(require('lessify'))(css); module.exports = css;
-},{"lessify":3}],2:[function(require,module,exports){
-module.exports = function (css, customDocument) {
-  var doc = customDocument || document;
-  if (doc.createStyleSheet) {
-    var sheet = doc.createStyleSheet()
-    sheet.cssText = css;
-    return sheet.ownerNode;
-  } else {
-    var head = doc.getElementsByTagName('head')[0],
-        style = doc.createElement('style');
-
-    style.type = 'text/css';
-
-    if (style.styleSheet) {
-      style.styleSheet.cssText = css;
-    } else {
-      style.appendChild(doc.createTextNode(css));
-    }
-
-    head.appendChild(style);
-    return style;
-  }
-};
-
-module.exports.byUrl = function(url) {
-  if (document.createStyleSheet) {
-    return document.createStyleSheet(url).ownerNode;
-  } else {
-    var head = document.getElementsByTagName('head')[0],
-        link = document.createElement('link');
-
-    link.rel = 'stylesheet';
-    link.href = url;
-
-    head.appendChild(link);
-    return link;
-  }
-};
-
-},{}],3:[function(require,module,exports){
-module.exports = require('cssify');
-
-},{"cssify":2}],4:[function(require,module,exports){
 var baseSlice = require('../internal/baseSlice'),
     isIterateeCall = require('../internal/isIterateeCall');
 
@@ -83,7 +39,7 @@ function drop(array, n, guard) {
 
 module.exports = drop;
 
-},{"../internal/baseSlice":41,"../internal/isIterateeCall":60}],5:[function(require,module,exports){
+},{"../internal/baseSlice":37,"../internal/isIterateeCall":56}],2:[function(require,module,exports){
 var createFindIndex = require('../internal/createFindIndex');
 
 /**
@@ -138,7 +94,7 @@ var findIndex = createFindIndex();
 
 module.exports = findIndex;
 
-},{"../internal/createFindIndex":50}],6:[function(require,module,exports){
+},{"../internal/createFindIndex":46}],3:[function(require,module,exports){
 /**
  * Gets the first element of `array`.
  *
@@ -162,7 +118,7 @@ function first(array) {
 
 module.exports = first;
 
-},{}],7:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 /**
  * Gets the last element of `array`.
  *
@@ -183,7 +139,7 @@ function last(array) {
 
 module.exports = last;
 
-},{}],8:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 var drop = require('./drop');
 
 /**
@@ -206,10 +162,7 @@ function rest(array) {
 
 module.exports = rest;
 
-},{"./drop":4}],9:[function(require,module,exports){
-module.exports = require('./some');
-
-},{"./some":15}],10:[function(require,module,exports){
+},{"./drop":1}],6:[function(require,module,exports){
 var arrayFilter = require('../internal/arrayFilter'),
     baseCallback = require('../internal/baseCallback'),
     baseFilter = require('../internal/baseFilter'),
@@ -272,7 +225,7 @@ function filter(collection, predicate, thisArg) {
 
 module.exports = filter;
 
-},{"../internal/arrayFilter":20,"../internal/baseCallback":24,"../internal/baseFilter":26,"../lang/isArray":76}],11:[function(require,module,exports){
+},{"../internal/arrayFilter":16,"../internal/baseCallback":20,"../internal/baseFilter":22,"../lang/isArray":72}],7:[function(require,module,exports){
 var baseEach = require('../internal/baseEach'),
     createFind = require('../internal/createFind');
 
@@ -330,7 +283,7 @@ var find = createFind(baseEach);
 
 module.exports = find;
 
-},{"../internal/baseEach":25,"../internal/createFind":49}],12:[function(require,module,exports){
+},{"../internal/baseEach":21,"../internal/createFind":45}],8:[function(require,module,exports){
 var baseMatches = require('../internal/baseMatches'),
     find = require('./find');
 
@@ -369,7 +322,7 @@ function findWhere(collection, source) {
 
 module.exports = findWhere;
 
-},{"../internal/baseMatches":36,"./find":11}],13:[function(require,module,exports){
+},{"../internal/baseMatches":32,"./find":7}],9:[function(require,module,exports){
 var arrayMap = require('../internal/arrayMap'),
     baseCallback = require('../internal/baseCallback'),
     baseMap = require('../internal/baseMap'),
@@ -439,7 +392,7 @@ function map(collection, iteratee, thisArg) {
 
 module.exports = map;
 
-},{"../internal/arrayMap":21,"../internal/baseCallback":24,"../internal/baseMap":35,"../lang/isArray":76}],14:[function(require,module,exports){
+},{"../internal/arrayMap":17,"../internal/baseCallback":20,"../internal/baseMap":31,"../lang/isArray":72}],10:[function(require,module,exports){
 var arrayReduce = require('../internal/arrayReduce'),
     baseEach = require('../internal/baseEach'),
     createReduce = require('../internal/createReduce');
@@ -456,7 +409,8 @@ var arrayReduce = require('../internal/arrayReduce'),
  * `_.reduce`, `_.reduceRight`, and `_.transform`.
  *
  * The guarded methods are:
- * `assign`, `defaults`, `includes`, `merge`, `sortByAll`, and `sortByOrder`
+ * `assign`, `defaults`, `defaultsDeep`, `includes`, `merge`, `sortByAll`,
+ * and `sortByOrder`
  *
  * @static
  * @memberOf _
@@ -484,7 +438,7 @@ var reduce = createReduce(arrayReduce, baseEach);
 
 module.exports = reduce;
 
-},{"../internal/arrayReduce":22,"../internal/baseEach":25,"../internal/createReduce":51}],15:[function(require,module,exports){
+},{"../internal/arrayReduce":18,"../internal/baseEach":21,"../internal/createReduce":47}],11:[function(require,module,exports){
 var arraySome = require('../internal/arraySome'),
     baseCallback = require('../internal/baseCallback'),
     baseSome = require('../internal/baseSome'),
@@ -543,7 +497,7 @@ var arraySome = require('../internal/arraySome'),
 function some(collection, predicate, thisArg) {
   var func = isArray(collection) ? arraySome : baseSome;
   if (thisArg && isIterateeCall(collection, predicate, thisArg)) {
-    predicate = null;
+    predicate = undefined;
   }
   if (typeof predicate != 'function' || thisArg !== undefined) {
     predicate = baseCallback(predicate, thisArg, 3);
@@ -553,7 +507,7 @@ function some(collection, predicate, thisArg) {
 
 module.exports = some;
 
-},{"../internal/arraySome":23,"../internal/baseCallback":24,"../internal/baseSome":42,"../internal/isIterateeCall":60,"../lang/isArray":76}],16:[function(require,module,exports){
+},{"../internal/arraySome":19,"../internal/baseCallback":20,"../internal/baseSome":38,"../internal/isIterateeCall":56,"../lang/isArray":72}],12:[function(require,module,exports){
 var getNative = require('../internal/getNative');
 
 /* Native method references for those with the same name as other `lodash` methods. */
@@ -579,7 +533,7 @@ var now = nativeNow || function() {
 
 module.exports = now;
 
-},{"../internal/getNative":57}],17:[function(require,module,exports){
+},{"../internal/getNative":53}],13:[function(require,module,exports){
 var isObject = require('../lang/isObject'),
     now = require('../date/now');
 
@@ -672,9 +626,9 @@ function debounce(func, wait, options) {
     var leading = true;
     trailing = false;
   } else if (isObject(options)) {
-    leading = options.leading;
+    leading = !!options.leading;
     maxWait = 'maxWait' in options && nativeMax(+options.maxWait || 0, wait);
-    trailing = 'trailing' in options ? options.trailing : trailing;
+    trailing = 'trailing' in options ? !!options.trailing : trailing;
   }
 
   function cancel() {
@@ -684,41 +638,35 @@ function debounce(func, wait, options) {
     if (maxTimeoutId) {
       clearTimeout(maxTimeoutId);
     }
+    lastCalled = 0;
     maxTimeoutId = timeoutId = trailingCall = undefined;
+  }
+
+  function complete(isCalled, id) {
+    if (id) {
+      clearTimeout(id);
+    }
+    maxTimeoutId = timeoutId = trailingCall = undefined;
+    if (isCalled) {
+      lastCalled = now();
+      result = func.apply(thisArg, args);
+      if (!timeoutId && !maxTimeoutId) {
+        args = thisArg = undefined;
+      }
+    }
   }
 
   function delayed() {
     var remaining = wait - (now() - stamp);
     if (remaining <= 0 || remaining > wait) {
-      if (maxTimeoutId) {
-        clearTimeout(maxTimeoutId);
-      }
-      var isCalled = trailingCall;
-      maxTimeoutId = timeoutId = trailingCall = undefined;
-      if (isCalled) {
-        lastCalled = now();
-        result = func.apply(thisArg, args);
-        if (!timeoutId && !maxTimeoutId) {
-          args = thisArg = null;
-        }
-      }
+      complete(trailingCall, maxTimeoutId);
     } else {
       timeoutId = setTimeout(delayed, remaining);
     }
   }
 
   function maxDelayed() {
-    if (timeoutId) {
-      clearTimeout(timeoutId);
-    }
-    maxTimeoutId = timeoutId = trailingCall = undefined;
-    if (trailing || (maxWait !== wait)) {
-      lastCalled = now();
-      result = func.apply(thisArg, args);
-      if (!timeoutId && !maxTimeoutId) {
-        args = thisArg = null;
-      }
-    }
+    complete(trailing, timeoutId);
   }
 
   function debounced() {
@@ -758,7 +706,7 @@ function debounce(func, wait, options) {
       result = func.apply(thisArg, args);
     }
     if (isCalled && !timeoutId && !maxTimeoutId) {
-      args = thisArg = null;
+      args = thisArg = undefined;
     }
     return result;
   }
@@ -768,7 +716,7 @@ function debounce(func, wait, options) {
 
 module.exports = debounce;
 
-},{"../date/now":16,"../lang/isObject":78}],18:[function(require,module,exports){
+},{"../date/now":12,"../lang/isObject":75}],14:[function(require,module,exports){
 var MapCache = require('../internal/MapCache');
 
 /** Used as the `TypeError` message for "Functions" methods. */
@@ -784,7 +732,7 @@ var FUNC_ERROR_TEXT = 'Expected a function';
  *
  * **Note:** The cache is exposed as the `cache` property on the memoized
  * function. Its creation may be customized by replacing the `_.memoize.Cache`
- * constructor with one whose instances implement the [`Map`](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-properties-of-the-map-prototype-object)
+ * constructor with one whose instances implement the [`Map`](http://ecma-international.org/ecma-262/6.0/#sec-properties-of-the-map-prototype-object)
  * method interface of `get`, `has`, and `set`.
  *
  * @static
@@ -850,7 +798,7 @@ memoize.Cache = MapCache;
 
 module.exports = memoize;
 
-},{"../internal/MapCache":19}],19:[function(require,module,exports){
+},{"../internal/MapCache":15}],15:[function(require,module,exports){
 var mapDelete = require('./mapDelete'),
     mapGet = require('./mapGet'),
     mapHas = require('./mapHas'),
@@ -876,7 +824,7 @@ MapCache.prototype.set = mapSet;
 
 module.exports = MapCache;
 
-},{"./mapDelete":66,"./mapGet":67,"./mapHas":68,"./mapSet":69}],20:[function(require,module,exports){
+},{"./mapDelete":62,"./mapGet":63,"./mapHas":64,"./mapSet":65}],16:[function(require,module,exports){
 /**
  * A specialized version of `_.filter` for arrays without support for callback
  * shorthands and `this` binding.
@@ -903,7 +851,7 @@ function arrayFilter(array, predicate) {
 
 module.exports = arrayFilter;
 
-},{}],21:[function(require,module,exports){
+},{}],17:[function(require,module,exports){
 /**
  * A specialized version of `_.map` for arrays without support for callback
  * shorthands and `this` binding.
@@ -926,7 +874,7 @@ function arrayMap(array, iteratee) {
 
 module.exports = arrayMap;
 
-},{}],22:[function(require,module,exports){
+},{}],18:[function(require,module,exports){
 /**
  * A specialized version of `_.reduce` for arrays without support for callback
  * shorthands and `this` binding.
@@ -954,7 +902,7 @@ function arrayReduce(array, iteratee, accumulator, initFromArray) {
 
 module.exports = arrayReduce;
 
-},{}],23:[function(require,module,exports){
+},{}],19:[function(require,module,exports){
 /**
  * A specialized version of `_.some` for arrays without support for callback
  * shorthands and `this` binding.
@@ -979,7 +927,7 @@ function arraySome(array, predicate) {
 
 module.exports = arraySome;
 
-},{}],24:[function(require,module,exports){
+},{}],20:[function(require,module,exports){
 var baseMatches = require('./baseMatches'),
     baseMatchesProperty = require('./baseMatchesProperty'),
     bindCallback = require('./bindCallback'),
@@ -1016,7 +964,7 @@ function baseCallback(func, thisArg, argCount) {
 
 module.exports = baseCallback;
 
-},{"../utility/identity":86,"../utility/property":87,"./baseMatches":36,"./baseMatchesProperty":37,"./bindCallback":44}],25:[function(require,module,exports){
+},{"../utility/identity":82,"../utility/property":83,"./baseMatches":32,"./baseMatchesProperty":33,"./bindCallback":40}],21:[function(require,module,exports){
 var baseForOwn = require('./baseForOwn'),
     createBaseEach = require('./createBaseEach');
 
@@ -1033,7 +981,7 @@ var baseEach = createBaseEach(baseForOwn);
 
 module.exports = baseEach;
 
-},{"./baseForOwn":30,"./createBaseEach":47}],26:[function(require,module,exports){
+},{"./baseForOwn":26,"./createBaseEach":43}],22:[function(require,module,exports){
 var baseEach = require('./baseEach');
 
 /**
@@ -1057,7 +1005,7 @@ function baseFilter(collection, predicate) {
 
 module.exports = baseFilter;
 
-},{"./baseEach":25}],27:[function(require,module,exports){
+},{"./baseEach":21}],23:[function(require,module,exports){
 /**
  * The base implementation of `_.find`, `_.findLast`, `_.findKey`, and `_.findLastKey`,
  * without support for callback shorthands and `this` binding, which iterates
@@ -1084,7 +1032,7 @@ function baseFind(collection, predicate, eachFunc, retKey) {
 
 module.exports = baseFind;
 
-},{}],28:[function(require,module,exports){
+},{}],24:[function(require,module,exports){
 /**
  * The base implementation of `_.findIndex` and `_.findLastIndex` without
  * support for callback shorthands and `this` binding.
@@ -1109,7 +1057,7 @@ function baseFindIndex(array, predicate, fromRight) {
 
 module.exports = baseFindIndex;
 
-},{}],29:[function(require,module,exports){
+},{}],25:[function(require,module,exports){
 var createBaseFor = require('./createBaseFor');
 
 /**
@@ -1128,7 +1076,7 @@ var baseFor = createBaseFor();
 
 module.exports = baseFor;
 
-},{"./createBaseFor":48}],30:[function(require,module,exports){
+},{"./createBaseFor":44}],26:[function(require,module,exports){
 var baseFor = require('./baseFor'),
     keys = require('../object/keys');
 
@@ -1147,7 +1095,7 @@ function baseForOwn(object, iteratee) {
 
 module.exports = baseForOwn;
 
-},{"../object/keys":80,"./baseFor":29}],31:[function(require,module,exports){
+},{"../object/keys":77,"./baseFor":25}],27:[function(require,module,exports){
 var toObject = require('./toObject');
 
 /**
@@ -1178,7 +1126,7 @@ function baseGet(object, path, pathKey) {
 
 module.exports = baseGet;
 
-},{"./toObject":71}],32:[function(require,module,exports){
+},{"./toObject":67}],28:[function(require,module,exports){
 var baseIsEqualDeep = require('./baseIsEqualDeep'),
     isObject = require('../lang/isObject'),
     isObjectLike = require('./isObjectLike');
@@ -1208,7 +1156,7 @@ function baseIsEqual(value, other, customizer, isLoose, stackA, stackB) {
 
 module.exports = baseIsEqual;
 
-},{"../lang/isObject":78,"./baseIsEqualDeep":33,"./isObjectLike":63}],33:[function(require,module,exports){
+},{"../lang/isObject":75,"./baseIsEqualDeep":29,"./isObjectLike":59}],29:[function(require,module,exports){
 var equalArrays = require('./equalArrays'),
     equalByTag = require('./equalByTag'),
     equalObjects = require('./equalObjects'),
@@ -1227,7 +1175,7 @@ var objectProto = Object.prototype;
 var hasOwnProperty = objectProto.hasOwnProperty;
 
 /**
- * Used to resolve the [`toStringTag`](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-object.prototype.tostring)
+ * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
  * of values.
  */
 var objToString = objectProto.toString;
@@ -1312,7 +1260,7 @@ function baseIsEqualDeep(object, other, equalFunc, customizer, isLoose, stackA, 
 
 module.exports = baseIsEqualDeep;
 
-},{"../lang/isArray":76,"../lang/isTypedArray":79,"./equalArrays":52,"./equalByTag":53,"./equalObjects":54}],34:[function(require,module,exports){
+},{"../lang/isArray":72,"../lang/isTypedArray":76,"./equalArrays":48,"./equalByTag":49,"./equalObjects":50}],30:[function(require,module,exports){
 var baseIsEqual = require('./baseIsEqual'),
     toObject = require('./toObject');
 
@@ -1366,7 +1314,7 @@ function baseIsMatch(object, matchData, customizer) {
 
 module.exports = baseIsMatch;
 
-},{"./baseIsEqual":32,"./toObject":71}],35:[function(require,module,exports){
+},{"./baseIsEqual":28,"./toObject":67}],31:[function(require,module,exports){
 var baseEach = require('./baseEach'),
     isArrayLike = require('./isArrayLike');
 
@@ -1391,7 +1339,7 @@ function baseMap(collection, iteratee) {
 
 module.exports = baseMap;
 
-},{"./baseEach":25,"./isArrayLike":58}],36:[function(require,module,exports){
+},{"./baseEach":21,"./isArrayLike":54}],32:[function(require,module,exports){
 var baseIsMatch = require('./baseIsMatch'),
     getMatchData = require('./getMatchData'),
     toObject = require('./toObject');
@@ -1423,7 +1371,7 @@ function baseMatches(source) {
 
 module.exports = baseMatches;
 
-},{"./baseIsMatch":34,"./getMatchData":56,"./toObject":71}],37:[function(require,module,exports){
+},{"./baseIsMatch":30,"./getMatchData":52,"./toObject":67}],33:[function(require,module,exports){
 var baseGet = require('./baseGet'),
     baseIsEqual = require('./baseIsEqual'),
     baseSlice = require('./baseSlice'),
@@ -1470,7 +1418,7 @@ function baseMatchesProperty(path, srcValue) {
 
 module.exports = baseMatchesProperty;
 
-},{"../array/last":7,"../lang/isArray":76,"./baseGet":31,"./baseIsEqual":32,"./baseSlice":41,"./isKey":61,"./isStrictComparable":65,"./toObject":71,"./toPath":72}],38:[function(require,module,exports){
+},{"../array/last":4,"../lang/isArray":72,"./baseGet":27,"./baseIsEqual":28,"./baseSlice":37,"./isKey":57,"./isStrictComparable":61,"./toObject":67,"./toPath":68}],34:[function(require,module,exports){
 /**
  * The base implementation of `_.property` without support for deep paths.
  *
@@ -1486,7 +1434,7 @@ function baseProperty(key) {
 
 module.exports = baseProperty;
 
-},{}],39:[function(require,module,exports){
+},{}],35:[function(require,module,exports){
 var baseGet = require('./baseGet'),
     toPath = require('./toPath');
 
@@ -1507,7 +1455,7 @@ function basePropertyDeep(path) {
 
 module.exports = basePropertyDeep;
 
-},{"./baseGet":31,"./toPath":72}],40:[function(require,module,exports){
+},{"./baseGet":27,"./toPath":68}],36:[function(require,module,exports){
 /**
  * The base implementation of `_.reduce` and `_.reduceRight` without support
  * for callback shorthands and `this` binding, which iterates over `collection`
@@ -1533,7 +1481,7 @@ function baseReduce(collection, iteratee, accumulator, initFromCollection, eachF
 
 module.exports = baseReduce;
 
-},{}],41:[function(require,module,exports){
+},{}],37:[function(require,module,exports){
 /**
  * The base implementation of `_.slice` without an iteratee call guard.
  *
@@ -1567,7 +1515,7 @@ function baseSlice(array, start, end) {
 
 module.exports = baseSlice;
 
-},{}],42:[function(require,module,exports){
+},{}],38:[function(require,module,exports){
 var baseEach = require('./baseEach');
 
 /**
@@ -1592,7 +1540,7 @@ function baseSome(collection, predicate) {
 
 module.exports = baseSome;
 
-},{"./baseEach":25}],43:[function(require,module,exports){
+},{"./baseEach":21}],39:[function(require,module,exports){
 /**
  * Converts `value` to a string if it's not one. An empty string is returned
  * for `null` or `undefined` values.
@@ -1602,15 +1550,12 @@ module.exports = baseSome;
  * @returns {string} Returns the string.
  */
 function baseToString(value) {
-  if (typeof value == 'string') {
-    return value;
-  }
   return value == null ? '' : (value + '');
 }
 
 module.exports = baseToString;
 
-},{}],44:[function(require,module,exports){
+},{}],40:[function(require,module,exports){
 var identity = require('../utility/identity');
 
 /**
@@ -1651,7 +1596,7 @@ function bindCallback(func, thisArg, argCount) {
 
 module.exports = bindCallback;
 
-},{"../utility/identity":86}],45:[function(require,module,exports){
+},{"../utility/identity":82}],41:[function(require,module,exports){
 /**
  * Used by `_.trim` and `_.trimLeft` to get the index of the first character
  * of `string` that is not found in `chars`.
@@ -1671,7 +1616,7 @@ function charsLeftIndex(string, chars) {
 
 module.exports = charsLeftIndex;
 
-},{}],46:[function(require,module,exports){
+},{}],42:[function(require,module,exports){
 /**
  * Used by `_.trim` and `_.trimRight` to get the index of the last character
  * of `string` that is not found in `chars`.
@@ -1690,7 +1635,7 @@ function charsRightIndex(string, chars) {
 
 module.exports = charsRightIndex;
 
-},{}],47:[function(require,module,exports){
+},{}],43:[function(require,module,exports){
 var getLength = require('./getLength'),
     isLength = require('./isLength'),
     toObject = require('./toObject');
@@ -1723,7 +1668,7 @@ function createBaseEach(eachFunc, fromRight) {
 
 module.exports = createBaseEach;
 
-},{"./getLength":55,"./isLength":62,"./toObject":71}],48:[function(require,module,exports){
+},{"./getLength":51,"./isLength":58,"./toObject":67}],44:[function(require,module,exports){
 var toObject = require('./toObject');
 
 /**
@@ -1752,7 +1697,7 @@ function createBaseFor(fromRight) {
 
 module.exports = createBaseFor;
 
-},{"./toObject":71}],49:[function(require,module,exports){
+},{"./toObject":67}],45:[function(require,module,exports){
 var baseCallback = require('./baseCallback'),
     baseFind = require('./baseFind'),
     baseFindIndex = require('./baseFindIndex'),
@@ -1779,7 +1724,7 @@ function createFind(eachFunc, fromRight) {
 
 module.exports = createFind;
 
-},{"../lang/isArray":76,"./baseCallback":24,"./baseFind":27,"./baseFindIndex":28}],50:[function(require,module,exports){
+},{"../lang/isArray":72,"./baseCallback":20,"./baseFind":23,"./baseFindIndex":24}],46:[function(require,module,exports){
 var baseCallback = require('./baseCallback'),
     baseFindIndex = require('./baseFindIndex');
 
@@ -1802,7 +1747,7 @@ function createFindIndex(fromRight) {
 
 module.exports = createFindIndex;
 
-},{"./baseCallback":24,"./baseFindIndex":28}],51:[function(require,module,exports){
+},{"./baseCallback":20,"./baseFindIndex":24}],47:[function(require,module,exports){
 var baseCallback = require('./baseCallback'),
     baseReduce = require('./baseReduce'),
     isArray = require('../lang/isArray');
@@ -1826,7 +1771,7 @@ function createReduce(arrayFunc, eachFunc) {
 
 module.exports = createReduce;
 
-},{"../lang/isArray":76,"./baseCallback":24,"./baseReduce":40}],52:[function(require,module,exports){
+},{"../lang/isArray":72,"./baseCallback":20,"./baseReduce":36}],48:[function(require,module,exports){
 var arraySome = require('./arraySome');
 
 /**
@@ -1879,7 +1824,7 @@ function equalArrays(array, other, equalFunc, customizer, isLoose, stackA, stack
 
 module.exports = equalArrays;
 
-},{"./arraySome":23}],53:[function(require,module,exports){
+},{"./arraySome":19}],49:[function(require,module,exports){
 /** `Object#toString` result references. */
 var boolTag = '[object Boolean]',
     dateTag = '[object Date]',
@@ -1896,7 +1841,7 @@ var boolTag = '[object Boolean]',
  * `Boolean`, `Date`, `Error`, `Number`, `RegExp`, or `String`.
  *
  * @private
- * @param {Object} value The object to compare.
+ * @param {Object} object The object to compare.
  * @param {Object} other The other object to compare.
  * @param {string} tag The `toStringTag` of the objects to compare.
  * @returns {boolean} Returns `true` if the objects are equivalent, else `false`.
@@ -1929,7 +1874,7 @@ function equalByTag(object, other, tag) {
 
 module.exports = equalByTag;
 
-},{}],54:[function(require,module,exports){
+},{}],50:[function(require,module,exports){
 var keys = require('../object/keys');
 
 /** Used for native method references. */
@@ -1998,7 +1943,7 @@ function equalObjects(object, other, equalFunc, customizer, isLoose, stackA, sta
 
 module.exports = equalObjects;
 
-},{"../object/keys":80}],55:[function(require,module,exports){
+},{"../object/keys":77}],51:[function(require,module,exports){
 var baseProperty = require('./baseProperty');
 
 /**
@@ -2015,7 +1960,7 @@ var getLength = baseProperty('length');
 
 module.exports = getLength;
 
-},{"./baseProperty":38}],56:[function(require,module,exports){
+},{"./baseProperty":34}],52:[function(require,module,exports){
 var isStrictComparable = require('./isStrictComparable'),
     pairs = require('../object/pairs');
 
@@ -2038,7 +1983,7 @@ function getMatchData(object) {
 
 module.exports = getMatchData;
 
-},{"../object/pairs":82,"./isStrictComparable":65}],57:[function(require,module,exports){
+},{"../object/pairs":79,"./isStrictComparable":61}],53:[function(require,module,exports){
 var isNative = require('../lang/isNative');
 
 /**
@@ -2056,7 +2001,7 @@ function getNative(object, key) {
 
 module.exports = getNative;
 
-},{"../lang/isNative":77}],58:[function(require,module,exports){
+},{"../lang/isNative":74}],54:[function(require,module,exports){
 var getLength = require('./getLength'),
     isLength = require('./isLength');
 
@@ -2073,12 +2018,12 @@ function isArrayLike(value) {
 
 module.exports = isArrayLike;
 
-},{"./getLength":55,"./isLength":62}],59:[function(require,module,exports){
+},{"./getLength":51,"./isLength":58}],55:[function(require,module,exports){
 /** Used to detect unsigned integer values. */
 var reIsUint = /^\d+$/;
 
 /**
- * Used as the [maximum length](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-number.max_safe_integer)
+ * Used as the [maximum length](http://ecma-international.org/ecma-262/6.0/#sec-number.max_safe_integer)
  * of an array-like value.
  */
 var MAX_SAFE_INTEGER = 9007199254740991;
@@ -2099,7 +2044,7 @@ function isIndex(value, length) {
 
 module.exports = isIndex;
 
-},{}],60:[function(require,module,exports){
+},{}],56:[function(require,module,exports){
 var isArrayLike = require('./isArrayLike'),
     isIndex = require('./isIndex'),
     isObject = require('../lang/isObject');
@@ -2129,7 +2074,7 @@ function isIterateeCall(value, index, object) {
 
 module.exports = isIterateeCall;
 
-},{"../lang/isObject":78,"./isArrayLike":58,"./isIndex":59}],61:[function(require,module,exports){
+},{"../lang/isObject":75,"./isArrayLike":54,"./isIndex":55}],57:[function(require,module,exports){
 var isArray = require('../lang/isArray'),
     toObject = require('./toObject');
 
@@ -2159,9 +2104,9 @@ function isKey(value, object) {
 
 module.exports = isKey;
 
-},{"../lang/isArray":76,"./toObject":71}],62:[function(require,module,exports){
+},{"../lang/isArray":72,"./toObject":67}],58:[function(require,module,exports){
 /**
- * Used as the [maximum length](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-number.max_safe_integer)
+ * Used as the [maximum length](http://ecma-international.org/ecma-262/6.0/#sec-number.max_safe_integer)
  * of an array-like value.
  */
 var MAX_SAFE_INTEGER = 9007199254740991;
@@ -2169,7 +2114,7 @@ var MAX_SAFE_INTEGER = 9007199254740991;
 /**
  * Checks if `value` is a valid array-like length.
  *
- * **Note:** This function is based on [`ToLength`](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-tolength).
+ * **Note:** This function is based on [`ToLength`](http://ecma-international.org/ecma-262/6.0/#sec-tolength).
  *
  * @private
  * @param {*} value The value to check.
@@ -2181,7 +2126,7 @@ function isLength(value) {
 
 module.exports = isLength;
 
-},{}],63:[function(require,module,exports){
+},{}],59:[function(require,module,exports){
 /**
  * Checks if `value` is object-like.
  *
@@ -2195,7 +2140,7 @@ function isObjectLike(value) {
 
 module.exports = isObjectLike;
 
-},{}],64:[function(require,module,exports){
+},{}],60:[function(require,module,exports){
 /**
  * Used by `trimmedLeftIndex` and `trimmedRightIndex` to determine if a
  * character code is whitespace.
@@ -2211,7 +2156,7 @@ function isSpace(charCode) {
 
 module.exports = isSpace;
 
-},{}],65:[function(require,module,exports){
+},{}],61:[function(require,module,exports){
 var isObject = require('../lang/isObject');
 
 /**
@@ -2228,7 +2173,7 @@ function isStrictComparable(value) {
 
 module.exports = isStrictComparable;
 
-},{"../lang/isObject":78}],66:[function(require,module,exports){
+},{"../lang/isObject":75}],62:[function(require,module,exports){
 /**
  * Removes `key` and its value from the cache.
  *
@@ -2244,7 +2189,7 @@ function mapDelete(key) {
 
 module.exports = mapDelete;
 
-},{}],67:[function(require,module,exports){
+},{}],63:[function(require,module,exports){
 /**
  * Gets the cached value for `key`.
  *
@@ -2260,7 +2205,7 @@ function mapGet(key) {
 
 module.exports = mapGet;
 
-},{}],68:[function(require,module,exports){
+},{}],64:[function(require,module,exports){
 /** Used for native method references. */
 var objectProto = Object.prototype;
 
@@ -2282,7 +2227,7 @@ function mapHas(key) {
 
 module.exports = mapHas;
 
-},{}],69:[function(require,module,exports){
+},{}],65:[function(require,module,exports){
 /**
  * Sets `value` to `key` of the cache.
  *
@@ -2302,7 +2247,7 @@ function mapSet(key, value) {
 
 module.exports = mapSet;
 
-},{}],70:[function(require,module,exports){
+},{}],66:[function(require,module,exports){
 var isArguments = require('../lang/isArguments'),
     isArray = require('../lang/isArray'),
     isIndex = require('./isIndex'),
@@ -2345,7 +2290,7 @@ function shimKeys(object) {
 
 module.exports = shimKeys;
 
-},{"../lang/isArguments":75,"../lang/isArray":76,"../object/keysIn":81,"./isIndex":59,"./isLength":62}],71:[function(require,module,exports){
+},{"../lang/isArguments":71,"../lang/isArray":72,"../object/keysIn":78,"./isIndex":55,"./isLength":58}],67:[function(require,module,exports){
 var isObject = require('../lang/isObject');
 
 /**
@@ -2361,7 +2306,7 @@ function toObject(value) {
 
 module.exports = toObject;
 
-},{"../lang/isObject":78}],72:[function(require,module,exports){
+},{"../lang/isObject":75}],68:[function(require,module,exports){
 var baseToString = require('./baseToString'),
     isArray = require('../lang/isArray');
 
@@ -2391,7 +2336,7 @@ function toPath(value) {
 
 module.exports = toPath;
 
-},{"../lang/isArray":76,"./baseToString":43}],73:[function(require,module,exports){
+},{"../lang/isArray":72,"./baseToString":39}],69:[function(require,module,exports){
 var isSpace = require('./isSpace');
 
 /**
@@ -2412,7 +2357,7 @@ function trimmedLeftIndex(string) {
 
 module.exports = trimmedLeftIndex;
 
-},{"./isSpace":64}],74:[function(require,module,exports){
+},{"./isSpace":60}],70:[function(require,module,exports){
 var isSpace = require('./isSpace');
 
 /**
@@ -2432,21 +2377,18 @@ function trimmedRightIndex(string) {
 
 module.exports = trimmedRightIndex;
 
-},{"./isSpace":64}],75:[function(require,module,exports){
+},{"./isSpace":60}],71:[function(require,module,exports){
 var isArrayLike = require('../internal/isArrayLike'),
     isObjectLike = require('../internal/isObjectLike');
-
-/** `Object#toString` result references. */
-var argsTag = '[object Arguments]';
 
 /** Used for native method references. */
 var objectProto = Object.prototype;
 
-/**
- * Used to resolve the [`toStringTag`](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-object.prototype.tostring)
- * of values.
- */
-var objToString = objectProto.toString;
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/** Native method references. */
+var propertyIsEnumerable = objectProto.propertyIsEnumerable;
 
 /**
  * Checks if `value` is classified as an `arguments` object.
@@ -2465,12 +2407,13 @@ var objToString = objectProto.toString;
  * // => false
  */
 function isArguments(value) {
-  return isObjectLike(value) && isArrayLike(value) && objToString.call(value) == argsTag;
+  return isObjectLike(value) && isArrayLike(value) &&
+    hasOwnProperty.call(value, 'callee') && !propertyIsEnumerable.call(value, 'callee');
 }
 
 module.exports = isArguments;
 
-},{"../internal/isArrayLike":58,"../internal/isObjectLike":63}],76:[function(require,module,exports){
+},{"../internal/isArrayLike":54,"../internal/isObjectLike":59}],72:[function(require,module,exports){
 var getNative = require('../internal/getNative'),
     isLength = require('../internal/isLength'),
     isObjectLike = require('../internal/isObjectLike');
@@ -2482,7 +2425,7 @@ var arrayTag = '[object Array]';
 var objectProto = Object.prototype;
 
 /**
- * Used to resolve the [`toStringTag`](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-object.prototype.tostring)
+ * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
  * of values.
  */
 var objToString = objectProto.toString;
@@ -2512,12 +2455,49 @@ var isArray = nativeIsArray || function(value) {
 
 module.exports = isArray;
 
-},{"../internal/getNative":57,"../internal/isLength":62,"../internal/isObjectLike":63}],77:[function(require,module,exports){
-var escapeRegExp = require('../string/escapeRegExp'),
-    isObjectLike = require('../internal/isObjectLike');
+},{"../internal/getNative":53,"../internal/isLength":58,"../internal/isObjectLike":59}],73:[function(require,module,exports){
+var isObject = require('./isObject');
 
 /** `Object#toString` result references. */
 var funcTag = '[object Function]';
+
+/** Used for native method references. */
+var objectProto = Object.prototype;
+
+/**
+ * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+ * of values.
+ */
+var objToString = objectProto.toString;
+
+/**
+ * Checks if `value` is classified as a `Function` object.
+ *
+ * @static
+ * @memberOf _
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is correctly classified, else `false`.
+ * @example
+ *
+ * _.isFunction(_);
+ * // => true
+ *
+ * _.isFunction(/abc/);
+ * // => false
+ */
+function isFunction(value) {
+  // The use of `Object#toString` avoids issues with the `typeof` operator
+  // in older versions of Chrome and Safari which return 'function' for regexes
+  // and Safari 8 equivalents which return 'object' for typed array constructors.
+  return isObject(value) && objToString.call(value) == funcTag;
+}
+
+module.exports = isFunction;
+
+},{"./isObject":75}],74:[function(require,module,exports){
+var isFunction = require('./isFunction'),
+    isObjectLike = require('../internal/isObjectLike');
 
 /** Used to detect host constructors (Safari > 5). */
 var reIsHostCtor = /^\[object .+?Constructor\]$/;
@@ -2531,15 +2511,9 @@ var fnToString = Function.prototype.toString;
 /** Used to check objects for own properties. */
 var hasOwnProperty = objectProto.hasOwnProperty;
 
-/**
- * Used to resolve the [`toStringTag`](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-object.prototype.tostring)
- * of values.
- */
-var objToString = objectProto.toString;
-
 /** Used to detect if a method is native. */
 var reIsNative = RegExp('^' +
-  escapeRegExp(fnToString.call(hasOwnProperty))
+  fnToString.call(hasOwnProperty).replace(/[\\^$.*+?()[\]{}|]/g, '\\$&')
   .replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$'
 );
 
@@ -2563,7 +2537,7 @@ function isNative(value) {
   if (value == null) {
     return false;
   }
-  if (objToString.call(value) == funcTag) {
+  if (isFunction(value)) {
     return reIsNative.test(fnToString.call(value));
   }
   return isObjectLike(value) && reIsHostCtor.test(value);
@@ -2571,7 +2545,7 @@ function isNative(value) {
 
 module.exports = isNative;
 
-},{"../internal/isObjectLike":63,"../string/escapeRegExp":83}],78:[function(require,module,exports){
+},{"../internal/isObjectLike":59,"./isFunction":73}],75:[function(require,module,exports){
 /**
  * Checks if `value` is the [language type](https://es5.github.io/#x8) of `Object`.
  * (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
@@ -2601,7 +2575,7 @@ function isObject(value) {
 
 module.exports = isObject;
 
-},{}],79:[function(require,module,exports){
+},{}],76:[function(require,module,exports){
 var isLength = require('../internal/isLength'),
     isObjectLike = require('../internal/isObjectLike');
 
@@ -2650,7 +2624,7 @@ typedArrayTags[stringTag] = typedArrayTags[weakMapTag] = false;
 var objectProto = Object.prototype;
 
 /**
- * Used to resolve the [`toStringTag`](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-object.prototype.tostring)
+ * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
  * of values.
  */
 var objToString = objectProto.toString;
@@ -2677,7 +2651,7 @@ function isTypedArray(value) {
 
 module.exports = isTypedArray;
 
-},{"../internal/isLength":62,"../internal/isObjectLike":63}],80:[function(require,module,exports){
+},{"../internal/isLength":58,"../internal/isObjectLike":59}],77:[function(require,module,exports){
 var getNative = require('../internal/getNative'),
     isArrayLike = require('../internal/isArrayLike'),
     isObject = require('../lang/isObject'),
@@ -2690,7 +2664,7 @@ var nativeKeys = getNative(Object, 'keys');
  * Creates an array of the own enumerable property names of `object`.
  *
  * **Note:** Non-object values are coerced to objects. See the
- * [ES spec](https://people.mozilla.org/~jorendorff/es6-draft.html#sec-object.keys)
+ * [ES spec](http://ecma-international.org/ecma-262/6.0/#sec-object.keys)
  * for more details.
  *
  * @static
@@ -2714,7 +2688,7 @@ var nativeKeys = getNative(Object, 'keys');
  * // => ['0', '1']
  */
 var keys = !nativeKeys ? shimKeys : function(object) {
-  var Ctor = object == null ? null : object.constructor;
+  var Ctor = object == null ? undefined : object.constructor;
   if ((typeof Ctor == 'function' && Ctor.prototype === object) ||
       (typeof object != 'function' && isArrayLike(object))) {
     return shimKeys(object);
@@ -2724,7 +2698,7 @@ var keys = !nativeKeys ? shimKeys : function(object) {
 
 module.exports = keys;
 
-},{"../internal/getNative":57,"../internal/isArrayLike":58,"../internal/shimKeys":70,"../lang/isObject":78}],81:[function(require,module,exports){
+},{"../internal/getNative":53,"../internal/isArrayLike":54,"../internal/shimKeys":66,"../lang/isObject":75}],78:[function(require,module,exports){
 var isArguments = require('../lang/isArguments'),
     isArray = require('../lang/isArray'),
     isIndex = require('../internal/isIndex'),
@@ -2790,7 +2764,7 @@ function keysIn(object) {
 
 module.exports = keysIn;
 
-},{"../internal/isIndex":59,"../internal/isLength":62,"../lang/isArguments":75,"../lang/isArray":76,"../lang/isObject":78}],82:[function(require,module,exports){
+},{"../internal/isIndex":55,"../internal/isLength":58,"../lang/isArguments":71,"../lang/isArray":72,"../lang/isObject":75}],79:[function(require,module,exports){
 var keys = require('./keys'),
     toObject = require('../internal/toObject');
 
@@ -2825,41 +2799,7 @@ function pairs(object) {
 
 module.exports = pairs;
 
-},{"../internal/toObject":71,"./keys":80}],83:[function(require,module,exports){
-var baseToString = require('../internal/baseToString');
-
-/**
- * Used to match `RegExp` [special characters](http://www.regular-expressions.info/characters.html#special).
- * In addition to special characters the forward slash is escaped to allow for
- * easier `eval` use and `Function` compilation.
- */
-var reRegExpChars = /[.*+?^${}()|[\]\/\\]/g,
-    reHasRegExpChars = RegExp(reRegExpChars.source);
-
-/**
- * Escapes the `RegExp` special characters "\", "/", "^", "$", ".", "|", "?",
- * "*", "+", "(", ")", "[", "]", "{" and "}" in `string`.
- *
- * @static
- * @memberOf _
- * @category String
- * @param {string} [string=''] The string to escape.
- * @returns {string} Returns the escaped string.
- * @example
- *
- * _.escapeRegExp('[lodash](https://lodash.com/)');
- * // => '\[lodash\]\(https:\/\/lodash\.com\/\)'
- */
-function escapeRegExp(string) {
-  string = baseToString(string);
-  return (string && reHasRegExpChars.test(string))
-    ? string.replace(reRegExpChars, '\\$&')
-    : string;
-}
-
-module.exports = escapeRegExp;
-
-},{"../internal/baseToString":43}],84:[function(require,module,exports){
+},{"../internal/toObject":67,"./keys":77}],80:[function(require,module,exports){
 var baseToString = require('../internal/baseToString');
 
 /* Native method references for those with the same name as other `lodash` methods. */
@@ -2897,7 +2837,7 @@ function startsWith(string, target, position) {
 
 module.exports = startsWith;
 
-},{"../internal/baseToString":43}],85:[function(require,module,exports){
+},{"../internal/baseToString":39}],81:[function(require,module,exports){
 var baseToString = require('../internal/baseToString'),
     charsLeftIndex = require('../internal/charsLeftIndex'),
     charsRightIndex = require('../internal/charsRightIndex'),
@@ -2941,7 +2881,7 @@ function trim(string, chars, guard) {
 
 module.exports = trim;
 
-},{"../internal/baseToString":43,"../internal/charsLeftIndex":45,"../internal/charsRightIndex":46,"../internal/isIterateeCall":60,"../internal/trimmedLeftIndex":73,"../internal/trimmedRightIndex":74}],86:[function(require,module,exports){
+},{"../internal/baseToString":39,"../internal/charsLeftIndex":41,"../internal/charsRightIndex":42,"../internal/isIterateeCall":56,"../internal/trimmedLeftIndex":69,"../internal/trimmedRightIndex":70}],82:[function(require,module,exports){
 /**
  * This method returns the first argument provided to it.
  *
@@ -2963,7 +2903,7 @@ function identity(value) {
 
 module.exports = identity;
 
-},{}],87:[function(require,module,exports){
+},{}],83:[function(require,module,exports){
 var baseProperty = require('../internal/baseProperty'),
     basePropertyDeep = require('../internal/basePropertyDeep'),
     isKey = require('../internal/isKey');
@@ -2996,7 +2936,7 @@ function property(path) {
 
 module.exports = property;
 
-},{"../internal/baseProperty":38,"../internal/basePropertyDeep":39,"../internal/isKey":61}],88:[function(require,module,exports){
+},{"../internal/baseProperty":34,"../internal/basePropertyDeep":35,"../internal/isKey":57}],84:[function(require,module,exports){
 'use strict';
 
 // So each country array has the following information:
@@ -3064,26 +3004,15 @@ module.exports = {
   allCountryCodes: allCountryCodes
 };
 
-},{}],89:[function(require,module,exports){
+},{}],85:[function(require,module,exports){
 (function (global){
 'use strict';
-
-function _toConsumableArray(arr) {
-    if (Array.isArray(arr)) {
-        for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) arr2[i] = arr[i];return arr2;
-    } else {
-        return Array.from(arr);
-    }
-}
-
-// TODO - fix the onlyContries props. Currently expects that as an array of country object, but users should be able to send in array of country isos
 
 var some = require('lodash/collection/some');
 var findWhere = require('lodash/collection/findWhere');
 var reduce = require('lodash/collection/reduce');
 var map = require('lodash/collection/map');
 var filter = require('lodash/collection/filter');
-var any = require('lodash/collection/any');
 var findIndex = require('lodash/array/findIndex');
 var first = require('lodash/array/first');
 var rest = require('lodash/array/rest');
@@ -3093,18 +3022,17 @@ var memoize = require('lodash/function/memoize');
 var trim = require('lodash/string/trim');
 var startsWith = require('lodash/string/startsWith');
 
-var React = typeof window !== 'undefined' ? window.React : typeof global !== 'undefined' ? global.React : null;
+var React = typeof window !== "undefined" ? window['React'] : typeof global !== "undefined" ? global['React'] : null;
 var onClickOutside = require('react-onclickoutside');
-var classNames = typeof window !== 'undefined' ? window.classNames : typeof global !== 'undefined' ? global.classNames : null;
+var classNames = typeof window !== "undefined" ? window['classNames'] : typeof global !== "undefined" ? global['classNames'] : null;
 var countryData = require('./country_data');
 var allCountries = countryData.allCountries;
 
-require('../less/default.less');
-
+var isModernBrowser;
 if (typeof document !== 'undefined') {
-    var isModernBrowser = Boolean(document.createElement('input').setSelectionRange);
+    isModernBrowser = Boolean(document.createElement('input').setSelectionRange);
 } else {
-    var isModernBrowser = true;
+    isModernBrowser = true;
 }
 
 var keys = {
@@ -3127,24 +3055,28 @@ function isNumberValid(inputNumber) {
     });
 }
 
+function findCountry(country) {
+    if (typeof country === 'string' && country.length === 2) {
+        return findWhere(allCountries, { iso2: country });
+    }
+    return country;
+}
+
 var ReactTelephoneInput = React.createClass({
     displayName: 'ReactTelephoneInput',
 
     mixins: [onClickOutside],
     getInitialState: function getInitialState() {
+        var countries = this.props.onlyCountries ? map(this.props.onlyCountries, findCountry) : allCountries;
+        var preferredCountries = map(this.props.preferredCountries, findCountry);
+
         var inputNumber = this.props.value || '';
-        var selectedCountryGuess = this.guessSelectedCountry(inputNumber.replace(/\D/g, ''));
+        var selectedCountryGuess = this.guessSelectedCountry(inputNumber.replace(/\D/g, ''), countries);
         var selectedCountryGuessIndex = findIndex(allCountries, selectedCountryGuess);
         var formattedNumber = this.formatNumber(inputNumber.replace(/\D/g, ''), selectedCountryGuess ? selectedCountryGuess.format : null);
-        var preferredCountries = [];
-
-        preferredCountries = filter(allCountries, function (country) {
-            return any(this.props.preferredCountries, function (preferredCountry) {
-                return preferredCountry === country.iso2;
-            });
-        }, this);
 
         return {
+            countries: countries,
             preferredCountries: preferredCountries,
             selectedCountry: selectedCountryGuess,
             highlightCountryIndex: selectedCountryGuessIndex,
@@ -3159,8 +3091,8 @@ var ReactTelephoneInput = React.createClass({
         value: React.PropTypes.string,
         autoFormat: React.PropTypes.bool,
         defaultCountry: React.PropTypes.string,
-        onlyCountries: React.PropTypes.arrayOf(React.PropTypes.object),
-        preferredCountries: React.PropTypes.arrayOf(React.PropTypes.object),
+        onlyCountries: React.PropTypes.any,
+        preferredCountries: React.PropTypes.any,
         onChange: React.PropTypes.func,
         onEnterKeyPress: React.PropTypes.func
     },
@@ -3171,20 +3103,22 @@ var ReactTelephoneInput = React.createClass({
             onlyCountries: allCountries,
             defaultCountry: allCountries[0].iso2,
             isValid: isNumberValid,
+            flagsImagePath: 'flags.png',
             onEnterKeyPress: function onEnterKeyPress() {}
         };
     },
     getNumber: function getNumber() {
         return this.state.formattedNumber !== '+' ? this.state.formattedNumber : '';
     },
+
     getValue: function getValue() {
         return this.getNumber();
     },
+
     componentDidMount: function componentDidMount() {
         document.addEventListener('keydown', this.handleKeydown);
 
         this._cursorToEnd();
-
         if (typeof this.props.onChange === 'function') {
             this.props.onChange(this.state.formattedNumber);
         }
@@ -3273,10 +3207,13 @@ var ReactTelephoneInput = React.createClass({
         }
     },
     // memoize results based on the first 5/6 characters. That is all that matters
-    guessSelectedCountry: memoize(function (inputNumber) {
-        var secondBestGuess = findWhere(allCountries, { iso2: this.props.defaultCountry }) || this.props.onlyCountries[0];
+    guessSelectedCountry: memoize(function (inputNumber, countries) {
+        // This gets called during getInitialState and so needs to be provided country
+        countries = this.state && this.state.countries || countries;
+
+        var secondBestGuess = findWhere(allCountries, { iso2: this.props.defaultCountry }) || countries[0];
         if (trim(inputNumber) !== '') {
-            var bestGuess = reduce(this.props.onlyCountries, function (selectedCountry, country) {
+            var bestGuess = reduce(countries, function (selectedCountry, country) {
                 if (startsWith(inputNumber, country.dialCode)) {
                     if (country.dialCode.length > selectedCountry.dialCode.length) {
                         return country;
@@ -3307,8 +3244,8 @@ var ReactTelephoneInput = React.createClass({
         // need to put the highlight on the current selected country if the dropdown is going to open up
         this.setState({
             showDropDown: !this.state.showDropDown,
-            highlightCountry: findWhere(this.props.onlyCountries, this.state.selectedCountry),
-            highlightCountryIndex: findIndex(this.props.onlyCountries, this.state.selectedCountry)
+            highlightCountry: findWhere(this.state.countries, this.state.selectedCountry),
+            highlightCountryIndex: findIndex(this.state.countries, this.state.selectedCountry)
         }, function () {
             // only need to scrool if the dropdown list is alive
             if (_this.state.showDropDown) {
@@ -3376,7 +3313,7 @@ var ReactTelephoneInput = React.createClass({
     },
     handleFlagItemClick: function handleFlagItemClick(country) {
         var currentSelectedCountry = this.state.selectedCountry;
-        var nextSelectedCountry = findWhere(this.props.onlyCountries, country);
+        var nextSelectedCountry = findWhere(this.state.countries, country);
 
         // tiny optimization
         if (currentSelectedCountry.iso2 !== nextSelectedCountry.iso2) {
@@ -3407,7 +3344,7 @@ var ReactTelephoneInput = React.createClass({
         // had to write own function because underscore does not have findIndex. lodash has it
         var highlightCountryIndex = this.state.highlightCountryIndex + direction;
 
-        if (highlightCountryIndex < 0 || highlightCountryIndex >= this.props.onlyCountries.length + this.state.preferredCountries.length) {
+        if (highlightCountryIndex < 0 || highlightCountryIndex >= this.state.countries.length + this.state.preferredCountries.length) {
             return highlightCountryIndex - direction;
         }
 
@@ -3419,14 +3356,14 @@ var ReactTelephoneInput = React.createClass({
             return null;
         }
         // don't include the preferred countries in search
-        var probableCountries = filter(this.props.onlyCountries, function (country) {
+        var probableCountries = filter(this.state.countries, function (country) {
             return startsWith(country.name.toLowerCase(), queryString.toLowerCase());
         }, this);
         return probableCountries[0];
     }),
     searchCountry: function searchCountry() {
-        var probableCandidate = this._searchCountry(this.state.queryString) || this.props.onlyCountries[0];
-        var probableCandidateIndex = findIndex(this.props.onlyCountries, probableCandidate) + this.state.preferredCountries.length;
+        var probableCandidate = this._searchCountry(this.state.queryString) || this.state.countries[0];
+        var probableCandidateIndex = findIndex(this.state.countries, probableCandidate) + this.state.preferredCountries.length;
 
         this.scrollTo(this.getElement(probableCandidateIndex), true);
 
@@ -3465,7 +3402,7 @@ var ReactTelephoneInput = React.createClass({
                 _moveHighlight(-1);
                 break;
             case keys.ENTER:
-                this.handleFlagItemClick(this.props.onlyCountries[this.state.highlightCountryIndex], event);
+                this.handleFlagItemClick(this.state.countries[this.state.highlightCountryIndex], event);
                 break;
             case keys.ESC:
                 this.setState({ showDropDown: false }, this._cursorToEnd);
@@ -3489,13 +3426,19 @@ var ReactTelephoneInput = React.createClass({
         }
     },
     getCountryDropDownList: function getCountryDropDownList() {
+        var _this3 = this;
 
-        var countryDropDownList = map([this.state.preferredCountries].concat(_toConsumableArray(this.props.onlyCountries)), function (country, index) {
+        var _state = this.state;
+        var preferredCountries = _state.preferredCountries;
+        var countries = _state.countries;
+
+        var countryDropDownList = map(preferredCountries.concat(countries), function (country, index) {
+
             var itemClasses = classNames({
                 country: true,
                 preferred: country.iso2 === 'us' || country.iso2 === 'gb',
                 active: country.iso2 === 'us',
-                highlight: this.state.highlightCountryIndex === index
+                highlight: _this3.state.highlightCountryIndex === index
             });
 
             return React.createElement('li', {
@@ -3503,20 +3446,29 @@ var ReactTelephoneInput = React.createClass({
                 key: 'flag_no_' + index,
                 'data-flag-key': 'flag_no_' + index,
                 className: itemClasses,
-                'data-dial-code': '1',
+                'data-dial-code': "1",
                 'data-country-code': country.iso2,
-                onClick: this.handleFlagItemClick.bind(this, country) }, React.createElement('div', { className: 'flag ' + country.iso2 }), React.createElement('span', { className: 'country-name' }, country.name), React.createElement('span', { className: 'dial-code' }, '+' + country.dialCode));
-        }, this);
+                onClick: _this3.handleFlagItemClick.bind(_this3, country) }, React.createElement('div', { className: 'flag ' + country.iso2, style: _this3.getFlagStyle() }), React.createElement('span', { className: 'country-name' }, country.name), React.createElement('span', { className: 'dial-code' }, '+' + country.dialCode));
+        });
 
-        var dashedLi = React.createElement('li', { key: 'dashes', className: 'divider' });
-        // let's insert a dashed line in between preffered countries and the rest
-        countryDropDownList.splice(this.state.preferredCountries.length, 0, dashedLi);
+        // let's insert a dashed line in between preffered countries and the rest IF we have any preferred countries
+        if (this.state.preferredCountries.length) {
+            var dashedLi = React.createElement('li', { key: "dashes", className: "divider" });
+            countryDropDownList.splice(this.state.preferredCountries.length, 0, dashedLi);
+        }
 
         var dropDownClasses = classNames({
             'country-list': true,
             'hide': !this.state.showDropDown
         });
-        return React.createElement('ul', { ref: 'flagDropdownList', className: dropDownClasses }, countryDropDownList);
+        return React.createElement('ul', { ref: "flagDropdownList", className: dropDownClasses }, countryDropDownList);
+    },
+    getFlagStyle: function getFlagStyle() {
+        return {
+            width: 16,
+            height: 11,
+            backgroundImage: 'url(' + this.props.flagsImagePath + ')'
+        };
     },
     render: function render() {
         var arrowClasses = classNames({
@@ -3533,21 +3485,23 @@ var ReactTelephoneInput = React.createClass({
             'open-dropdown': this.state.showDropDown
         });
 
+        var inputFlagClasses = 'flag ' + this.state.selectedCountry.iso2;
+
         return React.createElement('div', { className: 'react-tel-input' }, React.createElement('input', {
             onChange: this.handleInput,
             onClick: this.handleInputClick,
             onFocus: this.handleInputFocus,
             onKeyDown: this.handleInputKeyDown,
             value: this.state.formattedNumber,
-            ref: 'numberInput',
-            type: 'tel',
+            ref: "numberInput",
+            type: "tel",
             className: inputClasses,
-            placeholder: '+1 (702) 123-4567' }), React.createElement('div', { ref: 'flagDropDownButton', className: flagViewClasses, onKeyDown: this.handleKeydown }, React.createElement('div', { ref: 'selectedFlag', onClick: this.handleFlagDropdownClick, className: 'selected-flag', title: this.state.selectedCountry.name + ': + ' + this.state.selectedCountry.dialCode }, React.createElement('div', { className: 'flag ' + this.state.selectedCountry.iso2 }, React.createElement('div', { className: arrowClasses }))), this.state.showDropDown ? this.getCountryDropDownList() : ''));
+            placeholder: '+1 (702) 123-4567' }), React.createElement('div', { ref: 'flagDropDownButton', className: flagViewClasses, onKeyDown: this.handleKeydown }, React.createElement('div', { ref: 'selectedFlag', onClick: this.handleFlagDropdownClick, className: 'selected-flag', title: this.state.selectedCountry.name + ': + ' + this.state.selectedCountry.dialCode }, React.createElement('div', { className: inputFlagClasses, style: this.getFlagStyle() }, React.createElement('div', { className: arrowClasses }))), this.state.showDropDown ? this.getCountryDropDownList() : ''));
     }
 });
 
 module.exports = ReactTelephoneInput;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../less/default.less":1,"./country_data":88,"lodash/array/findIndex":5,"lodash/array/first":6,"lodash/array/rest":8,"lodash/collection/any":9,"lodash/collection/filter":10,"lodash/collection/findWhere":12,"lodash/collection/map":13,"lodash/collection/reduce":14,"lodash/collection/some":15,"lodash/function/debounce":17,"lodash/function/memoize":18,"lodash/string/startsWith":84,"lodash/string/trim":85,"react-onclickoutside":undefined}]},{},[89])(89)
+},{"./country_data":84,"lodash/array/findIndex":2,"lodash/array/first":3,"lodash/array/rest":5,"lodash/collection/filter":6,"lodash/collection/findWhere":8,"lodash/collection/map":9,"lodash/collection/reduce":10,"lodash/collection/some":11,"lodash/function/debounce":13,"lodash/function/memoize":14,"lodash/string/startsWith":80,"lodash/string/trim":81,"react-onclickoutside":undefined}]},{},[85])(85)
 });
