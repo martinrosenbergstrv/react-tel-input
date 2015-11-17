@@ -1,7 +1,7 @@
 {
-  "name": "react-telephone-input",
-  "version": "1.2.7",
-  "description": "React component for entering and validating international telephone numbers",
+  "name": "react-tel-input",
+  "version": "0.0.2",
+  "description": "React component for entering and validating international telephone numbers - modified. Removed LESS dependency",
   "main": "lib/index.js",
   "scripts": {
     "lint": "eslint src",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mukeshsoni/react-telephone-input"
+    "url": "https://github.com/martinrosenbergstrv/react-tel-input"
   },
   "keywords": [
     "react-component",
@@ -32,9 +32,9 @@
   "author": "Mukesh Soni",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mukeshsoni/react-telephone-input/issues"
+    "url": "https://github.com/martinrosenbergstrv/react-tel-input/issues"
   },
-  "homepage": "https://github.com/mukeshsoni/react-telephone-input",
+  "homepage": "https://github.com/martinrosenbergstrv/react-tel-input",
   "devDependencies": {
     "babel-eslint": "^3.1.17",
     "babelify": "^6.1.2",
