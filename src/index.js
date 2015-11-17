@@ -15,7 +15,6 @@ var trim = require('lodash/string/trim');
 var startsWith = require('lodash/string/startsWith');
 
 var React = require('react');
-var onClickOutside = require('react-onclickoutside');
 var classNames = require('classnames');
 var countryData = require('./country_data');
 var allCountries = countryData.allCountries;
@@ -57,7 +56,6 @@ function findCountry(country) {
 var ReactTelephoneInput = React.createClass({
     displayName: 'ReactTelephoneInput',
 
-    mixins: [onClickOutside],
     getInitialState: function getInitialState() {
         var countries = this.props.onlyCountries ? map(this.props.onlyCountries, findCountry) : allCountries;
         var preferredCountries = map(this.props.preferredCountries, findCountry);
@@ -416,13 +414,6 @@ var ReactTelephoneInput = React.createClass({
     handleInputKeyDown: function handleInputKeyDown(event) {
         if (event.which === keys.ENTER) {
             this.props.onEnterKeyPress(event);
-        }
-    },
-    handleClickOutside: function handleClickOutside() {
-        if (this.state.showDropDown) {
-            this.setState({
-                showDropDown: false
-            });
         }
     },
     getCountryDropDownList: function getCountryDropDownList() {
