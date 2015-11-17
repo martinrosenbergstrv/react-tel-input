@@ -15,11 +15,7 @@ var taskConfig = {
         // This is the name of the package that will be exported
         // by the component file. It must match the name of your
         // package on npm
-        pkgName: pkg.name,
-        less: {
-            path: 'less',
-            entry: 'default.less'
-        }
+        pkgName: pkg.name
     },
 
     example: {
@@ -32,9 +28,6 @@ var taskConfig = {
         ],
         scripts: [
             'example.js'
-        ],
-        less: [
-            'example.less'
         ]
     }
 

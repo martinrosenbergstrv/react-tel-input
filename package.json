@@ -1,11 +1,11 @@
 {
   "name": "react-tel-input",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "React component for entering and validating international telephone numbers - modified. Removed LESS dependency",
   "main": "lib/index.js",
   "scripts": {
     "lint": "eslint src",
-    "build": "gulp clean && NODE_ENV=production gulp build",
+    "build": "gulp build",
     "examples": "gulp dev:server",
     "publish:site": "gulp publish:examples",
     "release": "gulp release",
