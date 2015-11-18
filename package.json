@@ -1,17 +1,11 @@
 {
   "name": "react-tel-input",
-  "version": "0.0.5",
+  "version": "0.1.1",
   "description": "React component for entering and validating international telephone numbers - modified. Removed LESS dependency",
   "main": "lib/index.js",
   "scripts": {
-    "lint": "eslint src",
-    "build": "gulp build",
-    "examples": "gulp dev:server",
-    "publish:site": "gulp publish:examples",
-    "release": "gulp release",
-    "start": "gulp dev",
-    "test": "mochify --watch",
-    "watch": "gulp watch:lib"
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -23,37 +17,22 @@
     "international-telephone-input",
     "react"
   ],
-  "browserify": {
-    "transform": [
-      "babelify",
-      "lessify"
-    ]
-  },
   "author": "Mukesh Soni",
+  "contributors": [{
+    "name": "Martin Rosenberg"
+  }],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/martinrosenbergstrv/react-tel-input/issues"
   },
   "homepage": "https://github.com/martinrosenbergstrv/react-tel-input",
   "devDependencies": {
-    "babel-eslint": "^3.1.17",
-    "babelify": "^6.1.2",
-    "chai": "^3.0.0",
-    "eslint": "^0.23.0",
-    "gulp": "^3.9.0",
-    "lessify": "^1.0.1",
-    "mochify": "^2.9.0",
-    "react-component-gulp-tasks": "^0.7.0"
   },
   "dependencies": {
+    "classnames": "^2.1.2",
     "lodash": ">=2.4.1",
     "react": ">=0.12.1",
-    "classnames": "^2.1.2",
-    "react-onclickoutside": "^0.3.1"
-  },
-  "browserify-shim": {
-    "classnames": "global:classNames",
-    "react": "global:React",
-    "lodash": "global:lodash"
+    "react-onclickoutside": "^0.3.1",
+    "webpack": "^1.12.6"
   }
 }
