@@ -12,8 +12,11 @@ var webpackSettings = {
         filename: 'react-tel-input.js'
     },
     module: {
-        loaders: [
-        ]
+        loaders: []
+    },
+    externals: {
+        'react': 'React',
+        'loadash': 'loadash'
     },
     plugins: [
       new webpack.optimize.UglifyJsPlugin({minimize: true})

@@ -1,11 +1,12 @@
 {
   "name": "react-tel-input",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "description": "React component for entering and validating international telephone numbers - modified. Removed LESS dependency",
   "main": "lib/index.js",
   "scripts": {
     "build": "webpack",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "webpack": "node webpack-dev-server.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,11 @@
     "react"
   ],
   "author": "Mukesh Soni",
-  "contributors": [{
-    "name": "Martin Rosenberg"
-  }],
+  "contributors": [
+    {
+      "name": "Martin Rosenberg"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/martinrosenbergstrv/react-tel-input/issues"
