@@ -1,6 +1,6 @@
 {
   "name": "react-tel-input",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "React component for entering and validating international telephone numbers - modified. Removed LESS dependency",
   "main": "lib/index.js",
   "scripts": {

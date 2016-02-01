@@ -7,4 +7,5 @@ All credits to <a href="https://github.com/mukeshsoni/react-telephone-input" tar
 - Using Webpack (gulp removed)
 - Removed LESS dependency
 - Added callbacks for onFocus and onBlur
+- Added possibility to disable Flag's list via props, 'disableFlagsList' bool - .flag-list-disabled will be added to flag element
 - ...
