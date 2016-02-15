@@ -1,6 +1,6 @@
 {
   "name": "react-tel-input",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "React component for entering and validating international telephone numbers - modified. Removed LESS dependency",
   "main": "lib/index.js",
   "scripts": {
@@ -29,13 +29,13 @@
     "url": "https://github.com/martinrosenbergstrv/react-tel-input/issues"
   },
   "homepage": "https://github.com/martinrosenbergstrv/react-tel-input",
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "dependencies": {
     "classnames": "^2.1.2",
-    "lodash": ">=2.4.1",
-    "react": ">=0.12.1",
-    "react-onclickoutside": "^0.3.1",
+    "lodash": "^3.0.0",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-onclickoutside": "^4.5.0",
     "webpack": "^1.12.6"
   }
 }
