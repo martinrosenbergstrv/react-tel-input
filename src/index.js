@@ -527,6 +527,7 @@ var ReactTelephoneInput = React.createClass({
               ref: "numberInput",
               type: "tel",
               className: inputClasses,
+              name: this.props.name,
               placeholder: this.props.placeholder}),
           React.createElement(
             'div',
