@@ -513,6 +513,8 @@ var ReactTelephoneInput = React.createClass({
 
         var inputFlagClasses = 'flag ' + this.state.selectedCountry.iso2;
 
+        console.log('name', this.props.name)
+
         return React.createElement(
           'div',
           { className: 'react-tel-input' },
